@@ -11,10 +11,10 @@ def train_model(X, y, seed=seed):
     """
     model = GradientBoostingClassifier(
         learning_rate=0.05,
-        n_estimators=100000,
-        max_depth=6,
+        n_estimators=10000,
+        max_depth=4,
         subsample=0.9,
-        min_samples_leaf=1,
+        min_samples_leaf=7,
         random_state=seed
     )
     model.fit(X, y)
